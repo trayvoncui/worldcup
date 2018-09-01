@@ -1,0 +1,14 @@
+.lunbo {
+    width: 600px;
+    margin: 0 auto;
+}
+.daohang-container{
+    width:100%;
+    padding: 0 0;/*不设外边距会导致退出登录后页面收缩*/
+}
+body{
+    width:100%;
+}
+.carousel-control{
+    width: 0px;
+}

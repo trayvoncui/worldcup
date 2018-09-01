@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block title %}世界杯论坛-登录{% endblock %}
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/login.css') }}">
+{% endblock %}
+{% block page_content %}
+    {{ super() }}
+{#    文本居中#}
+    <div class="page-header text-center">
+        <h3> 登录</h3>
+    </div>
+{#    列偏移#}
+    <div class="col-md-5 col-md-offset-3">
+        {{ wtf.quick_form(form,form_type="horizontal") }}
+        <br>
+        <p style="margin-left: 96px">忘记密码? <a href="{{ url_for('auth.password_reset_request') }}">点此重置</a>.</p>
+        <p style="margin-left: 96px">新用户? <a href="{{ url_for('auth.register') }}">点此注册</a>.</p>
+    </div>
+{% endblock %}
