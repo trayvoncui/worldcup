@@ -1,7 +1,7 @@
 # -*-coding:utf-8 -*-
 # 启动脚本
 import sys
-reload(sys)
+#reload(sys)
 sys.setdefaultencoding('utf8')  #修改PYTHON默认字符编码
 import os
 from app import create_app, db
