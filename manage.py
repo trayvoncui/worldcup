@@ -31,5 +31,5 @@ def test():  # 单元测试
 
 
 if __name__ == '__main__':
-    # manager.run()
-    app.run()
+    manager.run()
+    #app.run()
